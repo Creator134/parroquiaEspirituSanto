@@ -1324,12 +1324,44 @@ blockquote {
 	font-size: 30px;
 }
 
+/* Estilos base para el menú desplegable */
+.nav-item.dropdown {
+    position: relative;
+}
 
+/* Ocultar el menú desplegable por defecto */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 150px;
+    z-index: 1000;
+    padding: 0.5rem 0;
+}
 
+/* Mostrar el menú al pasar el ratón sobre el elemento principal */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
+/* Estilo para los enlaces del menú desplegable */
+.dropdown-menu li {
+    list-style: none;
+}
 
+.dropdown-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+}
 
-
+.dropdown-menu li a:hover {
+    background-color: #f8f8f8;
+}
 
 
 
